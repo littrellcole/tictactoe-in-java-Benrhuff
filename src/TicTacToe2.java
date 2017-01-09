@@ -82,9 +82,11 @@ public class TicTacToe2 {
         }
 
         // Reset the game so that it can be played again.
-        private void newGame() {
-
-        }
+       private void newGame(){
+            turn=0;
+            for (int i = 0; i < spaces.length; i++) {
+                spaces[i].setText(" ");
+            }
     }
 }
 
